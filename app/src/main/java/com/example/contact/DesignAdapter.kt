@@ -21,6 +21,7 @@ class DesignAdapter(private val users: List<User>): RecyclerView.Adapter<ViewHol
        holder.binding.nameTV.text = user.name
         holder.binding.phnTV.text = user.phone
 
+        holder.binding.imageView.load(user.img)
 
     }
 
